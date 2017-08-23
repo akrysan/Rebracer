@@ -127,11 +127,8 @@ namespace SLaks.Rebracer.Services {
 						} catch (ArgumentException ex) {
 							if ((uint)ex.HResult == 0x80070057) // E_INVALIDARG, Property does not exists.
 							{
-								// This error occurs when the IDE property does not exist at this time. Non-existent properties 
-								// are removed from the settings file.
+								// This error occurs when the IDE property does not exist at this time.
 
-								property.Remove();
-								modified = true;
 								continue;
 							}
 							logger.Log("An error occurred while reading the setting " + section.Item1 + "#" + name + " from settings file.  Error: " + ex.Message);
@@ -155,10 +152,6 @@ namespace SLaks.Rebracer.Services {
 						logger.Log("An error occurred while reading the setting " + section.Item1 + "#" + name + " from settings file.  Error: " + ex.Message);
 					}
 				}
-			}
-
-			if (modified) {
-				xml.Save(SettingsPath, SaveOptions.DisableFormatting);
 			}
 		}
 		static object VsValue(XElement elem) {
