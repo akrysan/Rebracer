@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.25123.0
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rebracer", "Rebracer\Rebracer.csproj", "{C7A5F6B2-0BB5-4123-B1C0-FD036A19E173}"
 EndProject
@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4776A118-1FAE-4A49-941D-85266361807B}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		Rebracer.xml = Rebracer.xml
 	EndProjectSection
 EndProject
@@ -35,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C73AA2BE-5064-413F-8D20-4C93ACCB33D7}
 	EndGlobalSection
 EndGlobal
